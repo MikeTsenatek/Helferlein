@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView android:id="@+id/seperator"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_blue_dark"
+        android:paddingLeft="4dp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <LinearLayout android:id="@+id/lin_layout_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:layout_weight="0.9">
+
+            <TextView android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:textStyle="bold" />
+
+            <TextView android:id="@+id/funktion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="3dp" />
+            <TextView android:id="@+id/telefon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="3dp" />
+
+        </LinearLayout>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/telefonIcon"
+            android:src="@android:drawable/ic_menu_call"/>
+
+    </LinearLayout>
+</LinearLayout>

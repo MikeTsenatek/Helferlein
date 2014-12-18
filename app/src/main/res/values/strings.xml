@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Helferlein</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_diensthabend">Diensthabendes Personal</string>
+    <string name="title_activity_settings">Einstellungen</string>
+    <string name="title_activity_alarmierungen">Alarmierungen</string>
+
+</resources>

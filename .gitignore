@@ -1,0 +1,15 @@
+.gradle
+/local.properties
+/.idea/workspace.xml
+/.idea/libraries
+.DS_Store
+/build
+
+gradlew
+gradlew.bat
+gradle.properties
+settings.gradle
+Helferlein.iml
+gradle
+.idea
+app/src/main/res/values/paths.xml
