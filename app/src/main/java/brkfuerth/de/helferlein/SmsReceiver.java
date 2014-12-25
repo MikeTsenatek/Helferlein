@@ -28,16 +28,6 @@ public class SmsReceiver extends BroadcastReceiver {
             Pattern pattern = Pattern.compile("AlarmRuf Status\\nAusgeloest: (\\w{2}\\.\\w{2}\\.\\w{2} \\w{2}:\\w{2}),\\nZiel: (\\w{6}),\\nAnz: (\\w{1,3}) ,\\nSofort: (\\w{1,3}),\\nSpaeter: (\\w{1,3}),\\nNicht: (\\w{1,3}),\\nUnbek\\.: (\\w{1,3}),\\nNicht erreicht: (\\w{1,3}).");
             Matcher matcher = pattern.matcher(msg.getMessageBody());
             if (matcher.find()) {
-                Toast.makeText(context,
-                        "Alarmiert " + matcher.group(2) + "\n" +
-                                "um " + matcher.group(1) + "\n" +
-                                "Anz " + matcher.group(3) + "\n" +
-                                "Sofort " + matcher.group(4) + "\n" +
-                                "Später " + matcher.group(5) + "\n" +
-                                "Nicht " + matcher.group(6) + "\n" +
-                                "Unbek " + matcher.group(7) + "\n" +
-                                "NichtErreicht " + matcher.group(8)
-                        , Toast.LENGTH_LONG).show();
                 SimpleDateFormat parser = new SimpleDateFormat("dd.MM.yy HH:mm");
                 SimpleDateFormat utc = new SimpleDateFormat("yyyy.MM.dd HH:mm");
                 try {
@@ -62,9 +52,6 @@ public class SmsReceiver extends BroadcastReceiver {
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
-            }
-            else {
-                Toast.makeText(context,"Nicht gefunden...\n"+msg.getMessageBody(),Toast.LENGTH_SHORT).show();
             }
         }
     }
