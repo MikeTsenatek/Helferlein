@@ -8,7 +8,6 @@
 gradlew
 gradlew.bat
 gradle.properties
-settings.gradle
 Helferlein.iml
 gradle
 .idea
