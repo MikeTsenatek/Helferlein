@@ -60,7 +60,7 @@ public class ArrayAdapterAlarmierung extends ArrayAdapter<Alarmierung> {
         sofort.setText("Sofort: "+alarmierung.get(position).getSofort());
         spaeter.setText("Später: "+alarmierung.get(position).getSpaeter());
         nicht.setText("Nicht: "+alarmierung.get(position).getNicht());
-        unbekannt.setText("Nicht: "+alarmierung.get(position).getUnbekannt());
+        unbekannt.setText("Unbekannt: "+alarmierung.get(position).getUnbekannt());
         nichtErreicht.setText("Nicht erreicht: "+alarmierung.get(position).getNichtErreicht());
 
         return row;
